@@ -124,7 +124,10 @@ const Skills = () => {
         {
           items.map((i) => {
             return (
-              <Item {...i} />
+              <Item
+                key={i.link}
+                {...i}
+              />
             );
           })
         }
