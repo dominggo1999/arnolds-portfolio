@@ -216,6 +216,7 @@ export const StyledThumbnail = styled.div`
       absolute 
       top-0
       bg-[#1B1B1B]
+      dark:bg-white
     `}
 
     aspect-ratio: 1366 / 855; //screen shot dimensions
