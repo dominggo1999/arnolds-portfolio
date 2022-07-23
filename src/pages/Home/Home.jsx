@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '~/layout/Hero/Hero.jsx';
 import Skills from '~/layout/Skills/Skills.jsx';
 import Portfolio from '~/layout/Portfolio/Portfolio.jsx';
+import ContactForm from '~/layout/ContactForm/ContactForm.jsx';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Skills />
       <Portfolio />
+      <ContactForm />
     </>
   );
 };

@@ -13,6 +13,10 @@ const App = () => {
   return (
     <div className={`${theme} ${colorScheme}`}>
       <AppWrapper>
+        <div id="capsule">
+          <p className="number-1"></p>
+          <p className="number-2"></p>
+        </div>
         <Header />
         <ReactRouter>
           <Route

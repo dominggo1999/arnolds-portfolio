@@ -23,6 +23,29 @@ const CustomStyles = createGlobalStyle`
     background: ${({ colors, isDark }) => (isDark ? colors.primaryDarkHex : colors.primaryHex)};
   }
 
+  /* Captcha capsule */
+  #capsule{
+    ${tw`
+      z-[-1]
+      fixed 
+      top-0 
+      left-0
+      -left-12 
+      font-captcha
+    `}
+    p{
+      ${tw`
+        w-8 
+        h-8
+        flex 
+        items-center 
+        justify-center 
+        font-bold 
+        text-black
+      `}
+    }
+  }
+
   /* Scrollbar */
   /* width */
   ::-webkit-scrollbar {
