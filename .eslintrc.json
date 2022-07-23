@@ -68,9 +68,9 @@
         "import/extensions": [
             "error",
             {
-                "js": "never",
-                "jsx": "never",
-                "json": "never"
+                "js": "always",
+                "jsx": "always",
+                "json": "always"
             }
         ]
     },
@@ -82,7 +82,8 @@
                 },
                 "extensions": [
                     ".js",
-                    ".jsx"
+                    ".jsx",
+                    ".json"
                 ],
                 "packages": [
                     "packages/*"
