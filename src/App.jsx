@@ -4,6 +4,7 @@ import useThemeStore from '~/stores/useThemeStore.jsx';
 import useColorSchemeStore from '~/stores/useColorSchemeStore.jsx';
 import { AppWrapper } from './App.style.jsx';
 import Header from './layout/Header/Header.jsx';
+import Home from './pages/Home/Home.jsx';
 
 const App = () => {
   const theme = useThemeStore((state) => state.theme);
@@ -16,7 +17,7 @@ const App = () => {
         <ReactRouter>
           <Route
             path="/"
-            element={<p>Home</p>}
+            element={<Home />}
           />
 
           <Route
