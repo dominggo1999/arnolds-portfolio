@@ -85,19 +85,33 @@ export const ListItems = styled.ul`
     flex 
     flex-wrap
     gap-y-1
-    gap-x-7
+    gap-x-2
     font-medium
     text-dark-secondary
     dark:text-light-secondary
   `}
 `;
 
-export const ListItem = styled.li`
+export const StyledListItem = styled.li`
   ${tw`
     text-sm
-    md:text-base
+    md:text-base 
   `}
+
+  &:nth-last-of-type(1) .comma{
+    ${tw`
+      hidden
+    `}
+  }
 `;
+
+export const ListItem = ({ children }) => {
+  return (
+    <StyledListItem>
+      {children} <span className="comma">,</span>
+    </StyledListItem>
+  );
+};
 
 export const List = ({ title, children }) => {
   return (
