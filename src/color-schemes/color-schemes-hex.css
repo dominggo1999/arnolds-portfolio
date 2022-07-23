@@ -1,0 +1,98 @@
+.navy {
+  --primary: #fff8fe;
+  --primary-dark: #0A192F;
+  --accent: #1cdaad;
+  --accent-hover: #38e4bc;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #ecf3f2;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}
+
+.vegan {
+  --primary: #f6fffd;
+  --primary-dark: #011a1a;
+  --accent: #1bb378;
+  --accent-hover: #38c08c;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #ecf3f0;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}
+
+.solar-power {
+  --primary: #fffef8;
+  --primary-dark: #000000;
+  --accent: #F4BF3C;
+  --accent-hover: #fccb51;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #f3f1ec;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}
+
+.peach {
+  --primary: #fff8fe;
+  --primary-dark: #0E0F1A;
+  --accent: #FF7272;
+  --accent-hover: #fd8989;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #f3ecef;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}
+
+.orange {
+  --primary: #fff8fe;
+  --primary-dark: #0C0704;
+  --accent: #FE6F27;
+  --accent-hover: #fc8245;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #f3efec;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}
+
+.akihabara {
+  --primary: #fff8fe;
+  --primary-dark: #0A001F;
+  --accent: #6113FF;
+  --accent-hover: #8a4fff;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #f3ecf2;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}
+
+.raspberry {
+  --primary: #fff8fe;
+  --primary-dark: #0E0303;
+  --accent: #E9065D;
+  --accent-hover: #f51f71;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #f3ecef;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}
+
+.turmeric {
+  --primary: #fff8fe;
+  --primary-dark: #091920;
+  --accent: #d68f2b;
+  --accent-hover: #e4a650;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #f3f1ec;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}
+
+.huelveno {
+  --primary: #fff8fe;
+  --primary-dark: #0F172A;
+  --accent: #0EA5E9;
+  --accent-hover: #30b2ee;
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #ecf3f2;
+  --text-dark-primary: #444343;
+  --text-dark-secondary: #464646;
+}

@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "gen-theme": "node ./src/color-schemes/generateColorSchemes.js",
+    "watch:gen-theme": "nodemon ./src/color-schemes/generateColorSchemes.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.3",
