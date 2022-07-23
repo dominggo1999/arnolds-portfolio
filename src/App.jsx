@@ -5,6 +5,8 @@ import useColorSchemeStore from '~/stores/useColorSchemeStore.jsx';
 import { AppWrapper } from './App.style.jsx';
 import Header from './layout/Header/Header.jsx';
 import Home from './pages/Home/Home.jsx';
+import ThankYou from './pages/ThankYou/ThankYou.jsx';
+import NotFound from './pages/NotFound/NotFound.jsx';
 
 const App = () => {
   const theme = useThemeStore((state) => state.theme);
@@ -26,12 +28,12 @@ const App = () => {
 
           <Route
             path="thank-you"
-            element={<p>Thank you</p>}
+            element={<ThankYou />}
           />
 
           <Route
             path="*"
-            element={<p>Not Found</p>}
+            element={<NotFound />}
           />
         </ReactRouter>
       </AppWrapper>
