@@ -1,18 +1,74 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro';
+import tw, { GlobalStyles as BaseStyles } from 'twin.macro';
+import useThemeStore from '~/stores/useThemeStore.jsx';
+import useColorSchemeStore from '~/stores/useColorSchemeStore.jsx';
+import isMobile from '~/util/isMobile.js';
 
 const CustomStyles = createGlobalStyle`
   body {
-    ${tw`antialiased`}
+    ${tw`
+      antialiased
+      overflow-x-hidden 
+      font-primary
+    `}
+
+    ${!isMobile && tw`
+      transition 
+      transition-bg
+      ease-out-sine
+      duration-300
+    `}
+
+    background: ${({ colors, isDark }) => (isDark ? colors.primaryDarkHex : colors.primaryHex)};
+  }
+
+  /* Scrollbar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: ${({ colors, isDark }) => (isDark ? colors.primaryDarkHex : colors.primaryHex)};
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    ${tw`rounded-full`}
+    background: ${({ colors }) => colors.accentHex};
+  }
+
+  /* Need another color for accent hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${({ colors }) => colors.accentHex};
+  }
+
+  /* Firefox */
+  :root{
+    scrollbar-color: ${({ colors, isDark }) => (
+    isDark
+      ? `${colors.accentHex} ${colors.primaryDarkHex}`
+      : `${colors.accentHex} ${colors.primaryHex}`)};
+    scrollbar-width: thin;
   }
 `;
 
-const GlobalStyles = () => (
-  <>
-    <BaseStyles />
-    <CustomStyles />
-  </>
-);
+const GlobalStyles = () => {
+  const isDark = useThemeStore((state) => state.theme);
+  const colorScheme = useColorSchemeStore((state) => state.colorScheme);
+  const getActiveColors = useColorSchemeStore((state) => state.getActiveColors);
+
+  return (
+    <>
+      <BaseStyles />
+      <CustomStyles
+        colors={getActiveColors(colorScheme)}
+        isDark={isDark === 'dark' || null}
+      />
+    </>
+  );
+};
 
 export default GlobalStyles;
