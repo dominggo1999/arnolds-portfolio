@@ -6,7 +6,7 @@ import {
   SkillsWrapper,
   SkillsHeader,
   SkillsItems,
-  Item,
+  Item as StyledItem,
   ItemName,
 } from './Skills.style.jsx';
 import { ReactComponent as ReactLogo } from '../../icons/react.svg';
@@ -21,6 +21,86 @@ import { ReactComponent as CssLogo } from '../../icons/css.svg';
 import { ReactComponent as HTMLLogo } from '../../icons/html.svg';
 import { ReactComponent as JavascriptLogo } from '../../icons/javascript.svg';
 import { ReactComponent as GithubLogo } from '../../icons/github.svg';
+
+const items = [
+  {
+    text: 'HTML',
+    logo: HTMLLogo,
+    link: 'https://en.wikipedia.org/wiki/HTML5',
+  },
+  {
+    text: 'CSS',
+    logo: CssLogo,
+    link: 'https://en.wikipedia.org/wiki/CSS',
+  },
+  {
+    text: 'Javascript',
+    logo: JavascriptLogo,
+    link: 'https://www.javascript.com/',
+  },
+  {
+    text: 'React',
+    logo: ReactLogo,
+    link: 'https://reactjs.org/',
+  },
+  {
+    text: 'Tailwind CSS',
+    logo: TailwindLogo,
+    link: 'https://tailwindcss.com/',
+  },
+  {
+    text: 'Styled Components',
+    logo: StyledComponenstLogo,
+    link: 'https://styled-components.com/',
+  },
+  {
+    text: 'Node',
+    logo: NodeLogo,
+    link: 'https://nodejs.org/',
+  },
+  {
+    text: 'Electron',
+    logo: ElectronLogo,
+    link: 'https://www.electronjs.org/',
+  },
+  {
+    text: 'Chrome Extension',
+    logo: ChromeLogo,
+    link: 'https://developer.chrome.com/docs/extensions/',
+  },
+  {
+    text: 'Git',
+    logo: GitLogo,
+    link: 'https://git-scm.com/',
+  },
+  {
+    text: 'Github',
+    logo: GithubLogo,
+    link: 'https://github.com/',
+    monochrome: true,
+  },
+  {
+    text: 'Vite',
+    logo: ViteLogo,
+    link: 'https://vitejs.dev/',
+  },
+];
+
+const Item = ({
+  logo: Logo, link, text, monochrome = false,
+}) => {
+  return (
+    <StyledItem
+      target="_blank"
+      rel="noopener noreferrer"
+      href={link}
+      className={monochrome ? 'monochrome' : null}
+    >
+      <Logo />
+      <ItemName>{text}</ItemName>
+    </StyledItem>
+  );
+};
 
 const Skills = () => {
   const [skillsRef, skillsAnimationControls] = useAnimate({ threshold: 0.4 });
@@ -41,54 +121,13 @@ const Skills = () => {
         </SectionSubtitle>
       </SkillsHeader>
       <SkillsItems>
-        <Item>
-          <HTMLLogo />
-          <ItemName>HTML</ItemName>
-        </Item>
-        <Item>
-          <CssLogo />
-          <ItemName>CSS</ItemName>
-        </Item>
-        <Item>
-          <JavascriptLogo />
-          <ItemName>Javascript</ItemName>
-        </Item>
-        <Item>
-          <ReactLogo />
-          <ItemName>React</ItemName>
-        </Item>
-        <Item>
-          <TailwindLogo />
-          <ItemName>Tailwind CSS</ItemName>
-        </Item>
-        <Item>
-          <StyledComponenstLogo />
-          <ItemName>Styled Components</ItemName>
-        </Item>
-        <Item>
-          <NodeLogo />
-          <ItemName>Node</ItemName>
-        </Item>
-        <Item>
-          <ElectronLogo />
-          <ItemName>Electron</ItemName>
-        </Item>
-        <Item>
-          <ChromeLogo />
-          <ItemName>Chrome Extension</ItemName>
-        </Item>
-        <Item>
-          <GitLogo />
-          <ItemName>Git</ItemName>
-        </Item>
-        <Item className="monochrome">
-          <GithubLogo />
-          <ItemName>Github</ItemName>
-        </Item>
-        <Item>
-          <ViteLogo />
-          <ItemName>Vite</ItemName>
-        </Item>
+        {
+          items.map((i) => {
+            return (
+              <Item {...i} />
+            );
+          })
+        }
       </SkillsItems>
     </SkillsWrapper>
   );

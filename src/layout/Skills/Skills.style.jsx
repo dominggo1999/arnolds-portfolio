@@ -44,6 +44,14 @@ export const Item = styled.a`
     cursor-pointer
   `}
 
+  transition : transform ease-in-out 200ms;
+
+  &:hover{
+    ${tw`
+      scale-[1.1]
+    `}
+  }
+
   &.monochrome svg{
     ${tw`
       fill-current 
