@@ -1,1 +1,0 @@
-# example : Banner, Card, Carousel
