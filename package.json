@@ -2,8 +2,8 @@
   "name": "template",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run gen-theme && vite",
+    "build": "npm run gen-theme && vite build",
     "serve": "vite preview",
     "gen-theme": "node ./src/color-schemes/generateColorSchemes.js",
     "watch:gen-theme": "nodemon ./src/color-schemes/generateColorSchemes.js"
