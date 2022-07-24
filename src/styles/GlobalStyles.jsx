@@ -24,7 +24,7 @@ const CustomStyles = createGlobalStyle`
   }
 
   /* Captcha capsule */
-  #capsule{
+  #captchaCapsule{
     ${tw`
       z-[-1]
       fixed 

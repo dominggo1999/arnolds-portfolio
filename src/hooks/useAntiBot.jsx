@@ -9,7 +9,7 @@ const useAntiBot = () => {
   const [nums, setNums] = useState([randomFromNumber(10), randomFromNumber(10)]);
 
   const createImages = async () => {
-    const capsule = document.querySelector('#capsule');
+    const capsule = document.querySelector('#captchaCapsule');
     const elements = capsule.querySelectorAll('p');
 
     let sum = 0;
