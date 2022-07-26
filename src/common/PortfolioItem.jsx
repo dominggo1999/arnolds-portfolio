@@ -154,6 +154,12 @@ export const Link = styled.a`
     text-sm
     md:text-base
   `}
+
+  svg{
+    ${tw`
+      text-lg
+    `}
+  }
 `;
 
 export const Links = ({ repo, live }) => {
