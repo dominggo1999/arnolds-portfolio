@@ -32,7 +32,7 @@ const Hero = () => {
         </SubTitle>
         <Title variants={slideUp}>
           I am <span>Arnold Dominggo</span>,<br />
-          a <span>Front End Developer</span>
+          a <span>Front-End Developer</span>
         </Title>
         <Description variants={slideUp}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non assumenda itaque quos, inventore facere corporis.
