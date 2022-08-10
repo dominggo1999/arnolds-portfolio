@@ -70,8 +70,7 @@ const ContactForm = () => {
       setLoading(true);
       setStatus('Sending your message ...');
 
-      // TODO : Change this to an actual email address
-      fetch('https://formsubmit.co/ajax/sasetax218@lenfly.com', {
+      fetch('https://formsubmit.co/ajax/arnold_ds@proton.me', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
