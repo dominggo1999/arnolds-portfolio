@@ -119,13 +119,25 @@ const ContactForm = () => {
         <Description>Send me an <Accent>Email</Accent> , check out my <Accent>Github</Accent>, or connect with me on  <Accent>Linkedin!</Accent>
         </Description>
         <ImportantLinks>
-          <SocialLink>
+          <SocialLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:arnold_ds@proton.me"
+          >
             <EmailIcon />
           </SocialLink>
-          <SocialLink>
+          <SocialLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/dominggo1999"
+          >
             <GithubIcon />
           </SocialLink>
-          <SocialLink>
+          <SocialLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/arnold-ds"
+          >
             <LinkedinLogo />
           </SocialLink>
         </ImportantLinks>

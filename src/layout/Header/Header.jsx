@@ -12,6 +12,7 @@ import { slideUp } from '~/animations/single.js';
 import useStickyNavbar from '~/hooks/useStickyNavbar.jsx';
 import useAnimate from '~/hooks/useAnimate.jsx';
 import useScrollToTarget from '~/hooks/useScrollToTarget.jsx';
+import { motion } from 'framer-motion';
 import {
   Brand,
   Navigation,
@@ -58,8 +59,24 @@ const Header = () => {
           >
             <EmailIcon />
           </HeaderIcon>
-          <HeaderIcon variants={slideUp}><LinkedinLogo /></HeaderIcon>
-          <HeaderIcon variants={slideUp}><GithubIcon /></HeaderIcon>
+          <HeaderIcon
+            as={motion.a}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/arnold-ds"
+            variants={slideUp}
+          >
+            <LinkedinLogo />
+          </HeaderIcon>
+          <HeaderIcon
+            as={motion.a}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/dominggo1999"
+            variants={slideUp}
+          >
+            <GithubIcon />
+          </HeaderIcon>
 
           <ColorSchemePicker
             variants={slideUp}
