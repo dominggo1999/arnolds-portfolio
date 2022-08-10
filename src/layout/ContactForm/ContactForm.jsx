@@ -92,7 +92,7 @@ const ContactForm = () => {
         .catch((error) => {
           if (!isAborted()) {
             setLoading(false);
-            setStatus('Something went wrong, try again later or contact me directly through email');
+            setStatus('Something went wrong, try again later or contact me directly through email (arnold_ds@proton.me)');
           }
         });
     }
