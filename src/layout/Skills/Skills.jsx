@@ -34,9 +34,9 @@ const items = [
     link: 'https://en.wikipedia.org/wiki/CSS',
   },
   {
-    text: 'Javascript',
+    text: 'JavaScript',
     logo: JavascriptLogo,
-    link: 'https://www.javascript.com/',
+    link: 'https://en.wikipedia.org/wiki/JavaScript',
   },
   {
     text: 'React',
@@ -117,7 +117,7 @@ const Skills = () => {
           Skills
         </SectionTitle>
         <SectionSubtitle>
-          These are a few of the <Accent> tools and technologies </Accent> I&apos;ve used in projects and am most familiar with.
+          These are a few of the <Accent>tools and technologies</Accent> I&apos;m most familiar with and have used in projects.
         </SectionSubtitle>
       </SkillsHeader>
       <SkillsItems>
