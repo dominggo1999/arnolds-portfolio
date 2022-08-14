@@ -35,7 +35,7 @@ const Hero = () => {
           a <span>Front-End Developer</span>
         </Title>
         <Description variants={slideUp}>
-          I love coding and enjoy building things with it.
+          I love coding and enjoy building things.
         </Description>
         <Buttons variants={slideUp}>
           <Button onClick={() => scrollToTarget('#portfolio')}>
