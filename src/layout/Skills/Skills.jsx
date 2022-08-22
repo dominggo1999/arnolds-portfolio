@@ -113,7 +113,7 @@ const Skills = () => {
       animate={skillsAnimationControls}
     >
       <SkillsHeader>
-        <SectionTitle>
+        <SectionTitle as="h2">
           Skills
         </SectionTitle>
         <SectionSubtitle>

@@ -26,7 +26,7 @@ const Portfolio = () => {
   return (
     <PortfolioWrapper id="portfolio">
       <Header>
-        <SectionTitle>
+        <SectionTitle as="h2">
           Portfolio
         </SectionTitle>
         <SectionSubtitle>
