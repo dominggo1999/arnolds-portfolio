@@ -47,7 +47,7 @@
     "string-minify": "^1.0.1",
     "tailwindcss": "^2.2.15",
     "twin.macro": "^2.8.2",
-    "vite": "^2.9.9",
+    "vite": "^3.1.7",
     "vite-plugin-svgr": "^2.2.0"
   }
 }
